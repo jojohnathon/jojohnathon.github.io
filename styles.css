@@ -1,0 +1,111 @@
+body {
+    font-family: "Courier New", Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#hero {
+    text-align: center;
+}
+
+#hero h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#hero a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+#hero a:hover {
+    background-color: #555;
+}
+
+#projects .project,
+#experience .experience {
+    margin-bottom: 20px;
+}
+
+#projects h3,
+#experience h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#projects p,
+#experience p {
+    margin: 0;
+    font-size: 1em;
+}
+
+#projects a,
+#experience a {
+    color: #333;
+    text-decoration: none;
+}
+
+#projects a:hover,
+#experience a:hover {
+    text-decoration: underline;
+}
+
+#contact {
+    text-align: center;
+}
+
+#contact p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#contact a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+#contact a:hover {
+    background-color: #555;
+}
