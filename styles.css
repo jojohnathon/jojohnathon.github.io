@@ -2,3 +2,9 @@ body {
     display: flex;
     gap: 10px;
 }
+
+.image-container {
+    display: flex;
+    height: 50%;
+    gap: 10px;
+}
