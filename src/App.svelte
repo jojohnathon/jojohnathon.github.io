@@ -56,7 +56,7 @@
     available on <a href="https://github.com/jojohnathon">Github</a>.
   </p>
 
-  <section class="style-guide">
+  <!-- <section class="style-guide">
     <h2>Style options</h2>
     <p>Experiment with the portfolio by exploring these alternative styling directions:</p>
     <ul>
@@ -64,7 +64,7 @@
         <li>{option}</li>
       {/each}
     </ul>
-  </section>
+  </section> -->
 </main>
 
 <style>
