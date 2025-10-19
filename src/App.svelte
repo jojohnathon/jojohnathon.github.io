@@ -51,7 +51,7 @@
   </p>
 
   <section class="style-options" aria-labelledby="style-options-heading">
-    <h2 id="style-options-heading">Style options to explore</h2>
+    <!-- <h2 id="style-options-heading">Style options to explore</h2>
     <p>
       Keep the current minimal presentation, or experiment with one of the style snippets below to evolve the
       portfolio layout when you're ready.
@@ -64,7 +64,7 @@
           <code>{option.cssClass}</code>
         </li>
       {/each}
-    </ul>
+    </ul> -->
   </section>
 </main>
 
