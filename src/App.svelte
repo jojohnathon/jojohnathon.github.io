@@ -23,7 +23,7 @@
 
   <div class="image-container">
     <img src="/preview.png" alt="project preview collage" />
-    <img src="/profile.png" alt="Portrait of Johnathon Zheng" />
+    <!-- <img src="/profile.png" alt="Portrait of Johnathon Zheng" /> -->
   </div>
 
   <ul class="contact-list">
@@ -90,7 +90,7 @@
   }
 
   .image-container {
-    display: none;
+    display: flex;
     height: 50%;
     gap: 0.625rem;
   }
