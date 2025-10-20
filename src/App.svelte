@@ -14,7 +14,7 @@
     property="og:description"
     content="Portfolio of Johnathon Zheng, UC Berkeley Applied Mathematics student."
   />
-  <meta property="og:image" content="https://johnatho.nz/preview.png" />
+  <meta property="og:image" content="https://johnatho.nz/preview.png?v=2" />
   <meta property="og:url" content="https://johnatho.nz" />
   <meta property="og:type" content="website" />
 </svelte:head>
