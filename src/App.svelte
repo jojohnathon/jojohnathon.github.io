@@ -40,6 +40,10 @@
       <strong>LinkedIn: </strong>
       <a href="https://www.linkedin.com/in/johnathon-zheng">Johnathon Zheng</a>
     </li>
+     <li>
+      <strong>Resume: </strong>
+      <a href="https://www.linkedin.com/in/johnathon-zheng">Johnathon Zheng</a>
+    </li>
   </ul>
 
   <p>
