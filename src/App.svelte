@@ -48,7 +48,7 @@
     Mathematics from Skyline College in Spring 2025.
   </p>
   <p>
-    My interests include programming, system administration and computer vision.
+    My interests include programming, <a href="https://uptime.wankers.us/status/lol">system administration</a> and computer vision.
     Projects I've worked on are available on <a
       href="https://github.com/jojohnathon">Github</a
     >.
