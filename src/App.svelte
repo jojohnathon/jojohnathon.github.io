@@ -42,7 +42,7 @@
     </li>
      <li>
       <strong>Resume: </strong>
-      <a href="https://www.linkedin.com/in/johnathon-zheng">Johnathon Zheng</a>
+      <a href="/My_Resume.pdf">Johnathon Zheng</a>
     </li>
   </ul>
 
