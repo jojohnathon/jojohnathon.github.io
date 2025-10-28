@@ -22,29 +22,32 @@
 <main class="page" transition:fly={{ y: -50, duration: 600 }}>
   <h1>Johnathon Zheng</h1>
 
-  <div class="image-container">
-    <img src="/preview.png" alt="project preview collage" />
-    <!-- <img src="/profile.png" alt="Portrait of Johnathon Zheng" /> -->
-  </div>
+  <div class="header-content">
+    <ul class="contact-list">
+      <li>
+        <strong>Email: </strong>
+        <a href="mailto:johnathon@berkeley.edu">johnathon@berkeley.edu</a>
+      </li>
+      <li>
+        <strong>Github: </strong>
+        <a href="https://github.com/jojohnathon">jojohnathon</a>
+      </li>
+      <li>
+        <strong>LinkedIn: </strong>
+        <a href="https://www.linkedin.com/in/johnathon-zheng">Johnathon Zheng</a
+        >
+      </li>
+      <li>
+        <strong>Resume: </strong>
+        <a href="/My_Resume.pdf">Johnathon Zheng</a>
+      </li>
+    </ul>
 
-  <ul class="contact-list">
-    <li>
-      <strong>Email: </strong>
-      <a href="mailto:johnathon@berkeley.edu">johnathon@berkeley.edu</a>
-    </li>
-    <li>
-      <strong>Github: </strong>
-      <a href="https://github.com/jojohnathon">jojohnathon</a>
-    </li>
-    <li>
-      <strong>LinkedIn: </strong>
-      <a href="https://www.linkedin.com/in/johnathon-zheng">Johnathon Zheng</a>
-    </li>
-     <li>
-      <strong>Resume: </strong>
-      <a href="/My_Resume.pdf">Johnathon Zheng</a>
-    </li>
-  </ul>
+    <div class="image-container">
+      <img src="/preview.png" alt="project preview collage" loading="lazy" />
+      <!-- <img src="/profile.png" alt="Portrait of Johnathon Zheng" /> -->
+    </div>
+  </div>
 
   <p>
     I'm currently studying Applied Mathematics at the University of California,
@@ -52,12 +55,14 @@
     Mathematics from Skyline College in Spring 2025.
   </p>
   <p>
-    My interests include programming, <a href="https://uptime.wankers.us/status/lol">system administration</a> and computer vision.
-    Projects I've worked on are available on <a
-      href="https://github.com/jojohnathon">Github</a
-    >.
+    My interests include programming, <a
+      href="https://uptime.wankers.us/status/lol">system administration</a
+    >
+    and computer vision. Projects I've worked on are available on
+    <a href="https://github.com/jojohnathon">Github</a>.
   </p>
-  <pre><code>-----BEGIN PGP PUBLIC KEY BLOCK-----
+  <pre><code
+      >-----BEGIN PGP PUBLIC KEY BLOCK-----
 
 mQINBGhP/ZgBEADN4Yc3oT1TlLw58uaU3PH1f5hp7pi/utxgCYwWL174Rs3Id+aS
 1q8jRd3UGnmrf85l2hCOGJJ3fbZFxR2+fQqAFpFxkwRxJynggR2eDnwiyvDt397a
@@ -108,7 +113,8 @@ NpUM2akS4S4C4HPJiaC42YpAsJ5C9V+Ix5v5PUBN/hYV0xTDZygmVKbOAiKi/Sp+
 OqRaCZFVrRIcO2KMzugGDePZFbw5bjAtxP8oKXMMuk22BN5eaYSTA0vRbvd8VNDy
 Ym/n9Te9eHRtFitktGpz98mOcg==
 =7oxk
------END PGP PUBLIC KEY BLOCK-----</code></pre>
+-----END PGP PUBLIC KEY BLOCK-----</code
+    ></pre>
   <!-- <section class="style-options" aria-labelledby="style-options-heading">
     <h2 id="style-options-heading">Style options to explore</h2>
     <p>
@@ -149,20 +155,40 @@ Ym/n9Te9eHRtFitktGpz98mOcg==
     animation: slideUp 0.4s ease 0s backwards;
   }
 
-  .image-container {
+  .header-content {
     display: flex;
-    height: 50%;
-    gap: 0.625rem;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: flex-start;
     animation: slideUp 0.4s ease 0.05s backwards;
   }
 
+  @media (max-width: 768px) {
+    .header-content {
+      flex-direction: column;
+    }
+  }
+
+  .image-container {
+    display: flex;
+    flex: 0 0 auto;
+    gap: 0.625rem;
+  }
+
   .image-container img {
-    max-width: 50%;
+    max-width: 300px;
+    width: 100%;
     height: auto;
     border-radius: 1rem;
     object-fit: cover;
     transition: transform 0.3s ease;
     cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    .image-container img {
+      max-width: 100%;
+    }
   }
 
   .image-container img:hover {
@@ -176,7 +202,7 @@ Ym/n9Te9eHRtFitktGpz98mOcg==
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    animation: slideUp 0.4s ease 0.1s backwards;
+    flex: 1;
   }
 
   .contact-list li {
@@ -282,7 +308,8 @@ Ym/n9Te9eHRtFitktGpz98mOcg==
     background: rgba(15, 23, 42, 0.04);
     border-radius: 0.5rem;
     overflow-x: auto;
-    font-family: "Fira Code", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+    font-family: "Fira Code", "SFMono-Regular", Consolas, "Liberation Mono",
+      monospace;
     font-size: 0.75rem;
     line-height: 1.5;
     white-space: pre;
