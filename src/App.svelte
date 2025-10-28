@@ -57,8 +57,7 @@
       href="https://github.com/jojohnathon">Github</a
     >.
   </p>
-<p>
-  -----BEGIN PGP PUBLIC KEY BLOCK-----
+  <pre><code>-----BEGIN PGP PUBLIC KEY BLOCK-----
 
 mQINBGhP/ZgBEADN4Yc3oT1TlLw58uaU3PH1f5hp7pi/utxgCYwWL174Rs3Id+aS
 1q8jRd3UGnmrf85l2hCOGJJ3fbZFxR2+fQqAFpFxkwRxJynggR2eDnwiyvDt397a
@@ -109,11 +108,9 @@ NpUM2akS4S4C4HPJiaC42YpAsJ5C9V+Ix5v5PUBN/hYV0xTDZygmVKbOAiKi/Sp+
 OqRaCZFVrRIcO2KMzugGDePZFbw5bjAtxP8oKXMMuk22BN5eaYSTA0vRbvd8VNDy
 Ym/n9Te9eHRtFitktGpz98mOcg==
 =7oxk
------END PGP PUBLIC KEY BLOCK-----
-</p>
-
-  <section class="style-options" aria-labelledby="style-options-heading">
-    <!-- <h2 id="style-options-heading">Style options to explore</h2>
+-----END PGP PUBLIC KEY BLOCK-----</code></pre>
+  <!-- <section class="style-options" aria-labelledby="style-options-heading">
+    <h2 id="style-options-heading">Style options to explore</h2>
     <p>
       Keep the current minimal presentation, or experiment with one of the style snippets below to evolve the
       portfolio layout when you're ready.
@@ -126,8 +123,8 @@ Ym/n9Te9eHRtFitktGpz98mOcg==
           <code>{option.cssClass}</code>
         </li>
       {/each}
-    </ul> -->
-  </section>
+    </ul>
+  </section> -->
 </main>
 
 <style>
@@ -277,6 +274,26 @@ Ym/n9Te9eHRtFitktGpz98mOcg==
   p {
     margin: 0;
     max-width: 65ch;
+  }
+
+  pre {
+    margin: 0;
+    padding: 1rem;
+    background: rgba(15, 23, 42, 0.04);
+    border-radius: 0.5rem;
+    overflow-x: auto;
+    font-family: "Fira Code", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    white-space: pre;
+    max-width: fit-content;
+    width: 100%;
+    box-sizing: border-box;
+    animation: slideUp 0.4s ease 0.4s backwards;
+  }
+
+  pre code {
+    display: block;
   }
 
   .style-options {
