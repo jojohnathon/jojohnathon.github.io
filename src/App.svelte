@@ -1,66 +1,111 @@
 <script lang="ts">
   import { fly } from "svelte/transition";
-  import { styleOptions } from "./styleOptions";
 </script>
 
 <svelte:head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio of Johnathon Zheng" />
   <title>Johnathon Zheng</title>
+  <meta
+    name="description"
+    content="Portfolio of Johnathon Zheng, UC Berkeley Applied Mathematics student interested in programming, system administration, and computer vision."
+  />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <!-- open graph / social media -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://johnatho.nz" />
   <meta property="og:title" content="Johnathon Zheng Portfolio" />
   <meta
     property="og:description"
     content="Portfolio of Johnathon Zheng, UC Berkeley Applied Mathematics student."
   />
   <meta property="og:image" content="https://johnatho.nz/preview.png?v=2" />
-  <meta property="og:url" content="https://johnatho.nz" />
-  <meta property="og:type" content="website" />
+
+  <!-- twitter card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Johnathon Zheng Portfolio" />
+  <meta
+    name="twitter:description"
+    content="Portfolio of Johnathon Zheng, UC Berkeley Applied Mathematics student."
+  />
+  <meta name="twitter:image" content="https://johnatho.nz/preview.png?v=2" />
 </svelte:head>
 
 <main class="page" transition:fly={{ y: -50, duration: 600 }}>
-  <h1>Johnathon Zheng</h1>
+  <div class="layout-wrapper">
+    <div class="text-container">
+      <h1>Johnathon Zheng</h1>
 
-  <div class="header-content">
-    <ul class="contact-list">
-      <li>
-        <strong>Email: </strong>
-        <a href="mailto:johnathon@berkeley.edu">johnathon@berkeley.edu</a>
-      </li>
-      <li>
-        <strong>Github: </strong>
-        <a href="https://github.com/jojohnathon">jojohnathon</a>
-      </li>
-      <li>
-        <strong>LinkedIn: </strong>
-        <a href="https://www.linkedin.com/in/johnathon-zheng">Johnathon Zheng</a
+      <ul class="contact-list">
+        <li>
+          <strong>Email: </strong>
+          <a href="mailto:johnathon@berkeley.edu">johnathon@berkeley.edu</a>
+        </li>
+        <li>
+          <strong>Github: </strong>
+          <a
+            href="https://github.com/jojohnathon"
+            target="_blank"
+            rel="noopener noreferrer">jojohnathon</a
+          >
+        </li>
+        <li>
+          <strong>LinkedIn: </strong>
+          <a
+            href="https://www.linkedin.com/in/johnathon-zheng"
+            target="_blank"
+            rel="noopener noreferrer">Johnathon Zheng</a
+          >
+        </li>
+        <li>
+          <strong>Resume: </strong>
+          <a href="/My_Resume.pdf" target="_blank" rel="noopener noreferrer"
+            >Johnathon Zheng</a
+          >
+        </li>
+      </ul>
+
+      <p>
+        I'm currently studying Applied Mathematics at the University of
+        California, Berkeley. I earned my Associate of Science degrees in
+        Computer Science and Mathematics from <a
+          href="https://www.instagram.com/p/DQwyVFtERzg"
+          target="_blank"
+          rel="noopener noreferrer">Skyline College</a
+        > in Spring 2025.
+      </p>
+      <p>
+        My interests include programming, <a
+          href="https://uptime.wankers.us/status/lol"
+          target="_blank"
+          rel="noopener noreferrer">system administration</a
         >
-      </li>
-      <li>
-        <strong>Resume: </strong>
-        <a href="/My_Resume.pdf">Johnathon Zheng</a>
-      </li>
-    </ul>
+        and computer vision. Projects I've worked on are available on
+        <a
+          href="https://github.com/jojohnathon"
+          target="_blank"
+          rel="noopener noreferrer">Github</a
+        >.
+      </p>
+    </div>
 
     <div class="image-container">
-      <img src="/preview.png" alt="project preview collage" loading="lazy" />
+      <a
+        href="https://youtu.be/4SZEDBFPpgw"
+        target="_blank"
+        rel="noopener noreferrer"
+        title=":)"
+      >
+        <img
+          src="/preview.png"
+          alt="get your wish album cover"
+          loading="lazy"
+        />
+      </a>
       <!-- <img src="/profile.png" alt="Portrait of Johnathon Zheng" /> -->
     </div>
   </div>
-
-  <p>
-    I'm currently studying Applied Mathematics at the University of California,
-    Berkeley. I earned my Associate of Science degrees in Computer Science and
-    Mathematics from Skyline College in Spring 2025.
-  </p>
-  <p>
-    My interests include programming, <a
-      href="https://uptime.wankers.us/status/lol">system administration</a
-    >
-    and computer vision. Projects I've worked on are available on
-    <a href="https://github.com/jojohnathon">Github</a>.
-  </p>
   <pre><code
       >-----BEGIN PGP PUBLIC KEY BLOCK-----
 
@@ -134,151 +179,80 @@ Ym/n9Te9eHRtFitktGpz98mOcg==
 </main>
 
 <style>
-  :global(body) {
-    display: flex;
-    flex-direction: column;
-  }
-
   .page {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    padding: 2.5rem clamp(1.5rem, 5vw, 4rem);
+    padding: 3rem clamp(1.5rem, 5vw, 4rem);
     max-width: 64rem;
   }
 
-  h1 {
-    font-size: clamp(2.5rem, 4vw, 3.5rem);
-    font-weight: 700;
-    letter-spacing: -0.04em;
-    margin: 0;
-    animation: slideUp 0.4s ease 0s backwards;
-  }
-
-  .header-content {
+  .layout-wrapper {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 2.5rem;
     align-items: flex-start;
     animation: slideUp 0.4s ease 0.05s backwards;
   }
 
-  @media (max-width: 768px) {
-    .header-content {
-      flex-direction: column;
-    }
+  .text-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 65ch;
   }
 
   .image-container {
     display: flex;
     flex: 0 0 auto;
     gap: 0.625rem;
+    align-self: flex-start;
+    margin-top: calc(clamp(2.5rem, 4vw, 3.5rem) + 0.5rem);
+    animation: slideUp 0.4s ease 0.1s backwards;
   }
 
-  .image-container img {
-    max-width: 300px;
-    width: 100%;
-    height: auto;
-    border-radius: 1rem;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-    cursor: pointer;
-  }
-
-  @media (max-width: 768px) {
-    .image-container img {
-      max-width: 100%;
-    }
-  }
-
-  .image-container img:hover {
-    transform: scale(1.05) rotate(1deg);
-  }
-
-  .contact-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    flex: 1;
-  }
-
-  .contact-list li {
-    animation: slideUp 0.4s ease backwards;
-  }
-
-  .contact-list li:nth-child(1) {
-    animation-delay: 0.15s;
-  }
-  .contact-list li:nth-child(2) {
-    animation-delay: 0.2s;
-  }
-  .contact-list li:nth-child(3) {
-    animation-delay: 0.25s;
+  h1 {
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    margin: 0 0 0.25rem 0;
+    animation: slideUp 0.4s ease 0s backwards;
   }
 
   p {
+    margin: 0;
+    max-width: 65ch;
+    line-height: 1.8;
     animation: slideUp 0.4s ease backwards;
   }
 
   p:nth-of-type(1) {
     animation-delay: 0.3s;
   }
+
   p:nth-of-type(2) {
     animation-delay: 0.35s;
   }
 
-  @keyframes slideUp {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  .contact-list a {
+  a {
     color: #2563eb;
     font-weight: 600;
     text-decoration: none;
     position: relative;
-    padding: 0.25rem 0.5rem;
-    border-radius: 0.25rem;
     transition: color 0.3s ease;
   }
 
-  .contact-list a::after {
-    content: "";
-    position: absolute;
-    bottom: 0.1rem;
-    left: 0.5rem;
-    width: 0;
-    height: 2px;
-    background: #2563eb;
-    transition: width 0.3s ease;
-  }
-
-  .contact-list a:hover {
+  a:hover {
     color: #1d47a1;
   }
 
-  .contact-list a:hover::after {
-    width: calc(100% - 1rem);
+  a:focus-visible {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+    border-radius: 0.25rem;
   }
 
-  p a {
-    color: #2563eb;
-    font-weight: 600;
-    text-decoration: none;
-    position: relative;
-    transition: color 0.3s ease;
-  }
-
-  p a::after {
+  a::after {
     content: "";
     position: absolute;
     bottom: 0.05rem;
@@ -289,20 +263,76 @@ Ym/n9Te9eHRtFitktGpz98mOcg==
     transition: width 0.3s ease;
   }
 
-  p a:hover {
-    color: #1d47a1;
-  }
-
-  p a:hover::after {
+  a:hover::after {
     width: 100%;
   }
 
-  p {
+  .contact-list {
+    list-style: none;
+    padding: 0;
     margin: 0;
-    max-width: 65ch;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    flex: 0 0 auto;
+    font-size: 1.05rem;
+  }
+
+  .contact-list strong {
+    font-weight: 700;
+    color: #475569;
+  }
+
+  .contact-list li {
+    animation: slideUp 0.4s ease backwards;
+  }
+
+  .contact-list li:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+
+  .contact-list li:nth-child(2) {
+    animation-delay: 0.15s;
+  }
+
+  .contact-list li:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+
+  .contact-list li:nth-child(4) {
+    animation-delay: 0.25s;
+  }
+
+  .contact-list a {
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+  }
+
+  .contact-list a::after {
+    bottom: 0.1rem;
+    left: 0.5rem;
+  }
+
+  .contact-list a:hover::after {
+    width: calc(100% - 1rem);
+  }
+
+  .image-container img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  .image-container img:hover {
+    transform: scale(1.05) rotate(1deg);
   }
 
   pre {
+    display: none;
     margin: 0;
     padding: 1rem;
     background: rgba(15, 23, 42, 0.04);
@@ -323,45 +353,33 @@ Ym/n9Te9eHRtFitktGpz98mOcg==
     display: block;
   }
 
-  .style-options {
-    margin-top: 2.5rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid rgba(15, 23, 42, 0.1);
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
-  .style-options ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: grid;
-    gap: 1rem;
-  }
+  @media (max-width: 768px) {
+    .layout-wrapper {
+      flex-direction: column;
+      gap: 2rem;
+    }
 
-  .style-options li {
-    background: rgba(15, 23, 42, 0.04);
-    border-radius: 1rem;
-    padding: 1rem 1.25rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
+    .text-container {
+      gap: 1.25rem;
+    }
 
-  .style-options h3 {
-    margin: 0;
-    font-size: 1.1rem;
-  }
+    .image-container {
+      margin-top: 0;
+    }
 
-  .style-options code {
-    display: block;
-    padding: 0.75rem;
-    background: rgba(15, 23, 42, 0.08);
-    border-radius: 0.75rem;
-    font-family: "Fira Code", "SFMono-Regular", Consolas, "Liberation Mono",
-      monospace;
-    font-size: 0.9rem;
-    white-space: pre-wrap;
+    .image-container img {
+      max-width: 100%;
+    }
   }
 </style>
