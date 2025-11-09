@@ -235,7 +235,7 @@ Ym/n9Te9eHRtFitktGpz98mOcg==
   }
 
   a {
-    color: #2563eb;
+    color: #60a5fa;
     font-weight: 600;
     text-decoration: none;
     position: relative;
@@ -243,11 +243,11 @@ Ym/n9Te9eHRtFitktGpz98mOcg==
   }
 
   a:hover {
-    color: #1d47a1;
+    color: #93c5fd;
   }
 
   a:focus-visible {
-    outline: 2px solid #2563eb;
+    outline: 2px solid #60a5fa;
     outline-offset: 2px;
     border-radius: 0.25rem;
   }
@@ -259,7 +259,7 @@ Ym/n9Te9eHRtFitktGpz98mOcg==
     left: 0;
     width: 0;
     height: 2px;
-    background: #2563eb;
+    background: #60a5fa;
     transition: width 0.3s ease;
   }
 
@@ -280,7 +280,7 @@ Ym/n9Te9eHRtFitktGpz98mOcg==
 
   .contact-list strong {
     font-weight: 700;
-    color: #475569;
+    color: #94a3b8;
   }
 
   .contact-list li {
@@ -331,11 +331,15 @@ Ym/n9Te9eHRtFitktGpz98mOcg==
     transform: scale(1.05) rotate(1deg);
   }
 
+  .image-container a::after {
+    display: none;
+  }
+
   pre {
     display: none;
     margin: 0;
     padding: 1rem;
-    background: rgba(15, 23, 42, 0.04);
+    background: rgba(255, 255, 255, 0.05);
     border-radius: 0.5rem;
     overflow-x: auto;
     font-family: "Fira Code", "SFMono-Regular", Consolas, "Liberation Mono",
