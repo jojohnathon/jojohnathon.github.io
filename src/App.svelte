@@ -77,7 +77,7 @@
       </p>
       <p>
         My interests include programming, <a
-          href="https://uptime.wankers.us/status/lol"
+          href="https://uptime.lab.johnatho.nz/status/lol"
           target="_blank"
           rel="noopener noreferrer">system administration</a
         >
