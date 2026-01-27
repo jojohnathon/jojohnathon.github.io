@@ -60,7 +60,7 @@
         </li>
         <li>
           <strong>Resume: </strong>
-          <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer"
+          <a href="/johnathon-zheng-resume.pdf" target="_blank" rel="noopener noreferrer"
             >Johnathon Zheng</a
           >
         </li>
